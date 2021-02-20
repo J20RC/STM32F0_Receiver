@@ -194,6 +194,7 @@ int main(void)
 			PWMvalue[i] = 1500;//未用到的通道全部置中
 		}
 		LED_ON();
+		signalLoss = 0;//信号已连接标志
 		lastTime = nowTime;
 	}
 	if(nowTime-lastTime>2000)//距离上次接收时间大于2s，则说明失去信号
